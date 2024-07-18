@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política, Términos y Condiciones - CodeGenius Tienda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>CodeGenius Tienda</h1>
+        <button class="back-button" onclick="window.location.href='pagina.html'">⬅ Volver</button>
+    </header>
+
+    <main>
+        <section id="politica">
+            <h2>Política de Privacidad</h2>
+            <p>En CodeGenius Tienda, valoramos tu privacidad y nos comprometemos a proteger tu información personal. Esta política describe cómo recopilamos, usamos y compartimos tu información.</p>
+            <ul>
+                <li><strong>Recopilación de Información:</strong> Recopilamos información personal cuando te registras en nuestra tienda, realizas una compra o te suscribes a nuestro boletín.</li>
+                <li><strong>Uso de la Información:</strong> Utilizamos tu información para procesar tus pedidos, mejorar nuestros servicios y enviarte actualizaciones y promociones.</li>
+                <li><strong>Compartir la Información:</strong> No compartimos tu información personal con terceros, excepto cuando es necesario para procesar tu pedido o cumplir con la ley.</li>
+            </ul>
+        </section>
+
+        <section id="reclamaciones">
+            <h2>Libro de Reclamaciones</h2>
+            <p>En CodeGenius Tienda, tu satisfacción es nuestra prioridad. Si tienes alguna queja o sugerencia, por favor llena el siguiente formulario para registrar tu reclamación.</p>
+            <form id="reclamaciones-form" action="https://formspree.io/f/xwpeezwa" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="terminos">
+            <h2>Términos y Condiciones</h2>
+            <p>Al utilizar CodeGenius Tienda, aceptas los siguientes términos y condiciones:</p>
+            <ul>
+                <li><strong>Uso del Sitio:</strong> Debes tener al menos 18 años para usar nuestro sitio y realizar compras.</li>
+                <li><strong>Cuenta de Usuario:</strong> Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, así como de todas las actividades que ocurran bajo tu cuenta.</li>
+                <li><strong>Precios y Disponibilidad:</strong> Nos reservamos el derecho de cambiar los precios y la disponibilidad de los productos en cualquier momento sin previo aviso.</li>
+                <li><strong>Devoluciones y Reembolsos:</strong> Aceptamos devoluciones de productos dentro de los 30 días posteriores a la compra, siempre y cuando los productos estén en su estado original.</li>
+                <li><strong>Limitación de Responsabilidad:</strong> No seremos responsables de ningún daño indirecto, incidental o consecuente que surja del uso de nuestro sitio o productos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeGenius Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('reclamaciones-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Create a new FormData object from the form
+            const formData = new FormData(this);
+
+            // Send the form data using fetch
+            fetch(this.action, {
+                method: this.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Formulario enviado exitosamente. Te redirigiremos al inicio.');
+                    window.location.href = 'pagina.html';
+                } else {
+                    alert('Hubo un problema al enviar el formulario.');
+                }
+            }).catch(error => {
+                alert('Hubo un problema al enviar el formulario.');
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

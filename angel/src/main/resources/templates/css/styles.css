@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+    --color-primary: #2091F9;
+    --color-bg: #e5e5f7;
+    --color-text: #333;
+    --color-bg-light: white;
+    --color-border: #ccc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+}
+
+header {
+    background-color: #1D293F;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    background-color: #0073e6;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+h1, h2, h3 {
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+p, ul {
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #1D293F;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.informes-container {
+    display: grid;
+    gap: 2em;
+    padding: var(--padding-container) 0;
+}
+
+.red-social {
+    background-color: var(--color-bg-light);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.red-social h2 {
+    margin-bottom: 1em;
+}
+
+.red-social a, .red-social p {
+    font-size: 1.2em;
+}
+
+#politica, #terminos, #reclamaciones {
+    background-color: var(--color-bg-light);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+#reclamaciones h2 {
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+#reclamaciones p, #reclamaciones form {
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+#reclamaciones form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#reclamaciones form label {
+    font-weight: 600;
+}
+
+#reclamaciones form input, #reclamaciones form textarea {
+    padding: 0.5em;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
+
+#reclamaciones form button {
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+#reclamaciones form button:hover {
+    background-color: #0073e6;
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 50px 0;
+    }
+
+    .informes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .red-social {
+        padding: 1.5em;
+    }
+
+    .red-social h2 {
+        margin-bottom: 0.75em;
+    }
+
+    .red-social a, .red-social p {
+        font-size: 1em;
+    }
+
+    #politica, #terminos, #reclamaciones {
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 1em 0;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    .red-social {
+        padding: 1em;
+    }
+
+    .red-social h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .red-social a, .red-social p {
+        font-size: 0.9em;
+    }
+
+    #politica, #terminos, #reclamaciones {
+        padding: 1em;
+    }
+}
