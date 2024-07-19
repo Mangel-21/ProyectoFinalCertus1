@@ -25,3 +25,6 @@ public class Usuario {
 
     // Getters y setters
 }
+/*Esta clase representa la entidad Usuario para la base de datos. Utiliza anotaciones de JPA para definir la tabla y
+las columnas, y Lombok para generar automáticamente getters, setters y constructores.
+ */

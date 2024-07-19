@@ -36,3 +36,6 @@ public class AuthController {
         }
     }
 }
+/*este controlador maneja las solicitudes de inicio de sesión. Verifica las credenciales del usuario enviadas en la
+solicitud y responde con éxito si coinciden, de lo contrario, devuelve un error 401.
+ */

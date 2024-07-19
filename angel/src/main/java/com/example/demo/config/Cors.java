@@ -16,4 +16,8 @@ public class Cors implements WebMvcConfigurer {
                     .allowedHeaders("*"); // Encabezados permitidos
         }
     }
+    /*Esta clase configura el CORS (Cross-Origin Resource Sharing) para la aplicación Spring. Permite solicitudes
+    desde http://localhost:63342 y permite métodos HTTP como GET, POST, PUT y DELETE desde cualquier encabezado.
+    Esta clase configura el CORS (Cross-Origin Resource Sharing) para la aplicación Spring. Permite solicitudes desde http://localhost:63342 y permite métodos HTTP como GET, POST, PUT y DELETE desde cualquier encabezado.
+     */
 

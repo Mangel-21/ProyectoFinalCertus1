@@ -10,21 +10,34 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <meta name="theme-color" content="#2091F9">
     <script src="//code.tidio.co/uhkkbivna2hm1nrxvopygjmw5tofnd61.js" async></script>
+</head>
 <body>
 <header class="hero">
     <nav class="nav container">
-        <div class="nav__search">
-            <input type="text" placeholder="Buscar..." id="searchInput">
-            <ul class="nav__search-suggestions" id="searchSuggestions">
-                <li class="nav__search-suggestion" data-link="http://Wa.me/916629441">Escribe(cotizar)</li>
-                <!-- Otras sugerencias aquí según sea necesario -->
-            </ul>
-
+        <div class="nav__logo">
+            <h2 class="nav__title">Code Genius</h2>
         </div>
-
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="images/logo.jpg" class="nav__links">Logo</a>
+            </li>
+            <li class="nav__items">
+                <a href="#" class="nav__links"></a>
+            </li>
+            <li class="nav__items">
+                <a href="contacto.html" class="nav__links">Contacto</a>
+            </li>
+            <li class="nav__items">
+                <a href="terminos.html" class="nav__links">Politica--Comprobante</a>
+            </li>
+            <img src="./images/close.svg" class="nav__close">
+        </ul>
+        <div class="nav__menu">
+            <img src="./images/menu.svg" class="nav__img">
+        </div>
     </nav>
     <section class="hero__container container">
-        <h1 class="hero__title">¿Quiénes somos?</h1>
+        <h1 class="hero__title">¿Quienes somos?</h1>
         <p class="hero__paragraph">CodeGenius desarrolla microservicios con una variedad de tecnologías para ofrecer soluciones empresariales personalizadas y eficientes que impulsan el crecimiento e innovación en las organizaciones, adaptándose a las necesidades específicas de nuestros clientes.</p>
         <a href="#plan-perfecto" class="cta">Comienza ahora</a>
     </section>
@@ -56,7 +69,9 @@
             <div class="knowledege__texts">
                 <h2 class="subtitle">Ejemplo de frontend</h2>
                 <p class="knowledge__paragraph">En este proyecto de frontend, he desarrollado una aplicación web utilizando HTML, CSS y JavaScript para crear una interfaz de usuario interactiva y visualmente atractiva. La aplicación está diseñada para ser intuitiva y fácil de usar, proporcionando una experiencia de usuario fluida y receptiva. El proyecto ha sido desplegado en Heroku, aprovechando su plan de hosting gratuito para hacer la aplicación accesible en línea.</p>
-                <a href="https://pikman-6a5f9294810c.herokuapp.com/tiendaSi.html" class="cta">Link</a>
+                <a href="https://angel322.s3.us-east-2.amazonaws.com/pikman/tiendaSi.html" class="cta">Link</a>
+                <a href="https://github.com/Mangel-21/paginaPikman" class="cta">Repositorio</a>
+
             </div>
             <figure class="knowledge__picture">
                 <img src="./images/macbook.png" class="knowledge__img">
@@ -68,13 +83,13 @@
         <div class="price__table">
             <div class="price__element">
                 <p class="price__name"></p>
-                <h3 class="price__price">asesores </h3>
+                <h3 class="price__price">Accesoria</h3>
                 <div class="price__items">
                     <p class="price__features">Asesor: Angel</p>
                     <p class="price__features">Asesor: Jean Carlo Velapatiño</p>
-                    <p class="price__features">Asesor: Sthepano Quiroz</p>
+                    <p class="price__features">Asesor: Sthepano Quiroz  </p>
                 </div>
-
+                <a href="http://Wa.me/916629441" class="price__cta">Empieza ahora</a>
             </div>
             <div class="price__element price__element--best">
                 <p class="price__name">Frontend</p>
@@ -84,17 +99,17 @@
                     <p class="price__features">HTML</p>
                     <p class="price__features">JavaScript</p>
                 </div>
-                <a href="https://link.mercadopago.com.pe/lubanpago" target="_blank" class="price__cta">Empieza ahora</a>
+                <a href="hhttps://link.mercadopago.com.pe/lubanpago" target="_blank" class="price__cta">Empieza ahora</a>
             </div>
             <div class="price__element">
                 <p class="price__name">Backend</p>
-                <h3 class="price__price">$680-90$M</br></h3>
+                <h3 class="price__price">$680-90$M</h3>
                 <div class="price__items">
                     <p class="price__features">Java</p>
                     <p class="price__features">Python</p>
                     <p class="price__features">Base de datos - cloud</p>
                 </div>
-                <a href="https://link.mercadopago.com.pe/lubanpago" class="price__cta">Empieza ahora</a>
+                <a href="https://link.mercadopago.com.pe/lubanpago"class="price__cta">Empieza ahora</a>
             </div>
         </div>
     </section>
@@ -130,8 +145,8 @@
             </section>
             <section class="testimony__body" data-id="4">
                 <div class="testimony__texts">
-                    <h2 class="subtitle">Mi nombre es carlos Ramirez, <span class="testimony__course">Ingeniera de Software</span></h2>
-                    <p class="testimony__review">"CodeGenius ha sido un socio invaluable en el desarrollo de nuestros sistemas backend. Su conocimiento en Java, Python y AWS ha permitido que nuestros servicios sean robustos y altamente disponibles. La profesionalidad y dedicación del equipo es inigualable."</p>
+                    <h2 class="subtitle">Mi nombre es Kevin Ramirez, <span class="testimony__course">Emprendedor de negocio web</span></h2>
+                    <p class="testimony__review">Gracias a CodeGenius, hemos podido aprovechar servicios en la nube como Heroku para desplegar nuestras aplicaciones de manera rápida y eficiente. Su capacidad para integrar diversos servicios en la nube con nuestras necesidades empresariales ha sido clave para nuestro crecimiento. Son un socio tecnológico invaluable.</p>
                 </div>
                 <figure class="testimony__picture">
                     <img src="./images/face4.jpg" class="testimony__img">
@@ -142,56 +157,68 @@
     </section>
     <section class="questions container">
         <h2 class="subtitle">Preguntas frecuentes</h2>
-        <p class="questions__paragraph">Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros servicios y procesos.</p>
+        <p class="questions__paragraph"></p>
         <section class="questions__container">
             <article class="questions__padding">
-                <div class="questions__answers">
-                    <h3 class="questions__title">¿Cómo puedo iniciar el proceso de desarrollo con CodeGenius?</h3>
-                    <p class="questions__show">Iniciar el proceso de desarrollo con nosotros es muy sencillo. Solo tienes que contactarnos a través de nuestro formulario de contacto o por WhatsApp y nos pondremos en contacto contigo para discutir tus necesidades y objetivos.</p>
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Cómo garantizan que el software desarrollado se ajuste a nuestras necesidades específicas?
+                        <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                    </h3>
+                    <p class="questions__show">"En CodeGenius, seguimos un enfoque colaborativo y centrado en el cliente para asegurarnos de que el software desarrollado cumpla con sus requisitos específicos. Desde el inicio del proyecto, trabajamos estrechamente con usted para entender sus necesidades y objetivos. A lo largo del desarrollo, mantenemos una comunicación constante para ajustar y refinar el producto según sea necesario. Además, realizamos pruebas rigurosas y revisiones periódicas para garantizar que el software final no solo cumpla con sus expectativas, sino que también agregue valor a su negocio."</p>
                 </div>
             </article>
             <article class="questions__padding">
-                <div class="questions__answers">
-                    <h3 class="questions__title">¿Qué tipo de soporte ofrecen después de la implementación?</h3>
-                    <p class="questions__show">Ofrecemos soporte continuo después de la implementación para asegurar que tu aplicación o servicio funcione sin problemas. Puedes ponerte en contacto con nosotros en cualquier momento para resolver cualquier duda o problema.</p>
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué tipos de soporte y mantenimiento ofrecen después de la entrega del proyecto?
+                        <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                    </h3>
+                    <p class="questions__show">"Ofrecemos varios niveles de soporte y mantenimiento post-entrega para asegurarnos de que su software siga funcionando de manera óptima. Nuestros servicios incluyen soporte técnico, actualizaciones de software, corrección de errores y optimización del rendimiento. Puede elegir entre diferentes planes de mantenimiento que se ajusten a sus necesidades y presupuesto. Nuestro equipo está siempre disponible para ayudarle a resolver cualquier problema y realizar mejoras continuas, garantizando así la longevidad y eficiencia de su solución tecnológica."</p>
                 </div>
             </article>
             <article class="questions__padding">
-                <div class="questions__answers">
-                    <h3 class="questions__title">¿Cuáles son los tiempos de entrega típicos para un proyecto?</h3>
-                    <p class="questions__show">Los tiempos de entrega varían según la complejidad del proyecto. Trabajamos estrechamente contigo para establecer un cronograma realista y cumplir con los plazos acordados. Siempre buscamos entregar el trabajo de la mejor calidad en el menor tiempo posible.</p>
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Si quiero un proyecto segun mis requerimientos?
+                        <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                    </h3>
+                    <p class="questions__show">"En CodeGenius, estamos comprometidos a ofrecer soluciones totalmente personalizadas que se ajusten a las necesidades específicas de su negocio. Para asegurarnos de que su proyecto cumpla con todos sus requerimientos, nuestro equipo de expertos trabajará estrechamente con usted en cada etapa del desarrollo. Le proporcionaremos una cotización detallada que incluye todos los aspectos del proyecto. Además, si requiere funcionalidades adicionales o ajustes durante el desarrollo, ofrecemos la flexibilidad de realizar cambios con un costo adicional según las nuevas especificaciones. Nuestro objetivo es entregar un producto final que supere sus expectativas y impulse el éxito de su empresa."</p>
                 </div>
             </article>
         </section>
+        <section class="questions__offer">
+            <h2 class="subtitle"></h2>
+            <p class="questions__copy"></p>
+        </section>
     </section>
 </main>
-<footer class="footer container">
-    <div class="footer__social">
-        <p class="white-text">Mi LinKedln</p>
-        <a href="https://www.linkedin.com/in/angel-chipana-mozombite-096027294/" class="footer__icons"><img src="./images/linkeni.jpg" class="footer__img"></a>
-    </div>
-    <p class="footer__copy">&copy; 2023 Code Genius. Todos los derechos reservados.</p>
+<footer class="footer">
+    <section class="footer__container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">Code Genius</h2>
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="https://www.linkedin.com/feed/" class="nav__links">LinkedIn del patron>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+    <section class="footer__copy container">
+        <div class="footer__social">
+            <a href="https://web.facebook.com/profile.php?id=100087072230332&mibextid=ZbWKwL&_rdc=1&_rdr" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+            <a href="https://www.instagram.com/cgenius.24/?next=%2F" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+            <a href="https://www.youtube.com/" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+        </div>
+        <h3 class="footer__copyright">Derechos reservados &copy; Angel Giardel Chipana Mozombite</h3>
+    </section>
 </footer>
-<script src="js/slider.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/questions.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchInput = document.getElementById('searchInput');
-        const searchSuggestions = document.getElementById('searchSuggestions');
-
-        searchInput.addEventListener('focus', function() {
-            searchSuggestions.style.display = 'block'; // Mostrar sugerencias al hacer foco en el input
-        });
-
-        searchSuggestions.addEventListener('click', function(event) {
-            const clickedElement = event.target;
-            if (clickedElement.classList.contains('nav__search-suggestion')) {
-                const link = clickedElement.getAttribute('data-link');
-                window.location.href = link; // Redirigir al hacer clic en una sugerencia
-            }
-        });
-    });
-</script>
+<script src="./js/slider.js"></script>
+<script src="./js/questions.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

@@ -13,3 +13,6 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
     Usuario  findByUsernameAndPassword  (String username, String password);
 }
+/*Esta interfaz extiende JpaRepository y proporciona métodos para realizar operaciones CRUD en la
+entidad Usuario. Define métodos personalizados para encontrar un usuario por nombre de usuario y por nombre de usuario y contraseña.
+ */
